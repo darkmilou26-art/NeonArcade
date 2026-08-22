@@ -1,0 +1,22 @@
+# Neon Arcade
+
+> Neon Arcade is a free, no-download, browser-based mini-game collection with a neon visual theme. It works on desktop and mobile, and is available in French, English, Spanish, and Chinese. Each game has its own global leaderboard (daily and all-time top 10).
+
+## Games
+
+- **Neon Drop** — A precision timing game. Stop a moving bar exactly inside a green target zone. The player has 3 lives; the goal is to score as many points as possible before running out.
+- **Liquid Rush** — A precision game across 25 levels. Hold a button to fill a test tube and release it exactly between two markers. Includes a fast-paced "Ultra Time Trial" mode (30 seconds).
+- **Click Rush** — A reflex game. Targets (normal, bonus, and trap) appear at random positions on screen; the player must tap them as fast as possible within a time limit.
+
+## Key facts
+
+- URL: https://neonarcads.netlify.app/
+- Price: free, no account required to play
+- Platform: any modern web browser (desktop and mobile), no installation
+- Languages: French, English, Spanish, Chinese (switchable from the home page)
+- Leaderboards: each game has a public global top 10, both "today" and "all-time"
+- Developer: solo indie project
+
+## Contact
+
+- Email link available on the site footer
