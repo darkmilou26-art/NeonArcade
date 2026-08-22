@@ -1,16 +1,19 @@
 import { getStore } from '@netlify/blobs';
 
-const VALID_GAMES = ['neondrop', 'liquidrush', 'clickrush'];
+const VALID_GAMES = ['neondrop', 'liquidrush', 'clickrush', 'echorush'];
 const MAX_ENTRIES = 100;
 const MAX_PSEUDO_LEN = 14;
 
 // Bornes de plausibilité par jeu (anti-triche basique : refuse les scores irréalistes).
+// Recalculées à partir des formules de score réelles de chaque jeu, avec une marge
+// confortable pour ne jamais rejeter un score légitime obtenu par un joueur très doué.
 // Ce n'est pas une protection anti-triche complète (le score part du navigateur du
 // joueur), juste un garde-fou contre les valeurs absurdes envoyées via l'inspecteur.
 const SCORE_CAPS = {
-    neondrop: 5000,
-    liquidrush: 25000,
-    clickrush: 3000
+    neondrop: 100000,   // score = 100 × combo cumulé, partie illimitée tant que 3 vies non perdues
+    liquidrush: 25000,  // score fixe par réussite (100-300 pts), borné par les 25 niveaux ou 30s en time trial
+    clickrush: 15000,   // score = combo cumulé sur 30s, plafond relevé par sécurité
+    echorush: 60000     // score = niveau × 10 cumulé, partie illimitée tant qu'aucune erreur
 };
 
 const CORS_HEADERS = {
