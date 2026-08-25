@@ -1,6 +1,0 @@
-{
-  "name": "MUTATE - Infinite Evolution Game",
-  "description": "One creature. One mutation. Infinite evolution. An addictive collaborative web experience where players mutate creatures step by step.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
